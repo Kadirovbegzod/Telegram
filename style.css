@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+aside {
+    width: 300px;
+    background-color: rgb(88, 88, 255);
+    height: 100vh;
+    position: fixed;
+    left: -280px;
+    opacity: 0;
+    transition-duration: 0.3s;
+    z-index: 1;
+    top: 0;
+}
+
+p {
+    position: relative;
+    font-size: 40px;
+    z-index: 0;
+
+}
+
+aside:active {
+    left: 0;
+    opacity: 100%;
+}
+
+aside hr {
+    margin: 50px 0 0 0;
+    border-color: black;
+
+}
+
+aside img {
+width: 80px;
+height: 80px;
+    border-radius: 50%;
+    margin: 60px 0 0 15px;
+}
+
+aside h3 {
+    margin: 30px 0 0 15px;
+
+}
+
+#checkbox {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    z-index: 5;
+    display: none;
+
+}
+
+#checkbox:checked~aside {
+    left: 0;
+    opacity: 100%;
+
+
+}
+
+aside ul li a {
+    color: white;
+
+
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+
+.hamburger{
+font-size: 50px;
+position: relative;
+z-index: 6;
+}
+aside ul li{
+margin: 8px 0 8px 10px;
+height: 40px;
+
+text-align: justify;
+}
+aside ul:hover{
+    background-color: rgb(95, 95, 238) ;
+}
